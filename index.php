@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>schEDUle</title>
-    <link rel="stylesheet" href="dist/styles.css" type="text/css" />
+    <link rel="stylesheet" href="dist/main.css" type="text/css" />
   </head>
   <body>
     <div id="header">
@@ -21,8 +21,16 @@
     </div>
     <div id="container">
 
+<button type="button" class="btn btn-primary">Default</button>
       uhgh
     </div>
+
+<script src="dist/main.js" type="text/javascript"></script>
+<script>
+$(function(){
+  alert('page loaded');
+})
+</script>
 
   </body>
 </html>

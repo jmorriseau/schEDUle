@@ -2,17 +2,17 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var connect = require('gulp-connect');
+var connect = require('gulp-connect-php');
 
 //gulp task take a name and the call back function - what to execute
 gulp.task('sass', function(){
-  gulp.src('sass/*.scss') // takes a sting- file location
+  gulp.src('sass/main.scss') // takes a sting- file location
   .pipe(sass().on("error", sass.logError)) //chaining commands
   .pipe(gulp.dest('./dist'));// put it in the dist folder
 });
 
 gulp.task('scripts', function(){
-  return gulp.src([''])// array of files since they are not all in
+  return gulp.src(['./node_modules/jquery/dist/jquery.js','./node_modules/bootstrap/dist/js/bootstrap.js','./js/*.js'])// array of files since they are not all in
   //the same location
   .pipe(concat('main.js')) //think of pipe as "then" - it waits
   //until the previous task is finished to fire
