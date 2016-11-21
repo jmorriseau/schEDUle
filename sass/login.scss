@@ -1,9 +1,8 @@
 #login-page{
   background-color:#eaeaea;
-  // background-image:url("../images/login-bg.png");
-  // background-repeat: no-repeat;
-  // background-size:cover;
-  // background-position: left top;
+  background-image:url("../images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
   width:100%;
   height:100%;
   position:absolute;
@@ -26,45 +25,49 @@
   border: solid 1px #fff;
   border-radius: 10px;
 
-  .form-row{
+  .login-form-row{
     line-height:80px;
+    position:relative;
   }
 
-  label{
-    font-size:16px;
-    font-weight:600;
-    line-height:22px;
-    display:block;
+  .login-label{
+    position:absolute;
+    top:32px;
+    left:15px;
     color:#fff;
+    font-size:16px;
   }
+
   input[type=text], input[type=password]{
     width:100%;
     height:50px;
     border-radius:5px;
     box-sizing: border-box;
     line-height: 50px;
-    padding:0 10px;
+    padding:0 10px 0 40px;
     background-color:transparent;
     border:solid 1px #fff;
     color:#fff;
+    font-size:16px;
   }
+
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #fff;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #fff;
-}
-.login-btn-container{
-  width:100%;
-  text-align:center;
-  margin-top:25px;
-}
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+  .login-btn-container{
+    width:100%;
+    text-align:center;
+    margin-top:25px;
+  }
   .btn-login{
     padding:10px 35px;
     background-color:$primaryColor;

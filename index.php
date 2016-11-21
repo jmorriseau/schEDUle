@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css" type="text/css" />
   </head>
-  <body>
+  <body onload="loadPage('login')">
     <div id="header">
       header stuff here
     </div>
@@ -22,16 +22,21 @@
       </ul>
     </div>
 
-    <?php
-    include_once('php/login.php');
-    ?>
+    <div id="container" class="content-container">
 
-    <!-- <div id="container">
-      <?php
-      include_once('php/home.php');
-      ?>
+    </div>
+    <div class="modal-bg">
+    </div>
+    <div class="modal-container demo-modal">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button class="pull-right" onclick="closeModal('.demo-modal')">Close</button>
+      </div>
+    </div>
 
-    </div> -->
 
 <script src="dist/main.js" type="text/javascript"></script>
 

@@ -1,6 +1,6 @@
 Ths is the home page.
-
-Notes for tonight:
+<!--
+Notes for Saturday:
 Build the pages out
   Build the home page
   Build the building page etc
@@ -11,11 +11,86 @@ Eventually:
 auto prefixer
 browerify/ browser sync
 
-bring in an email and lock icon that we can put on our inputs
+from Sunday:
+increase height of modal header
 
+ -->
+<div class="alert-box info">
+  <div class="alert-icon">
+    <span class="fa fa-info-circle"></span>
+  </div>
+  <div class="alert-text">
+    This is an info message.
+  </div>
+</div>
 
+<div class="alert-box danger">
+  <div class="alert-icon">
+    <span class="fa fa-exclamation-circle"></span>
+  </div>
+  <div class="alert-text">
+    This is an error message.
+  </div>
+</div>
 
+<div class="alert-box warning">
+  <div class="alert-icon">
+    <span class="fa fa-exclamation-triangle"></span>
+  </div>
+  <div class="alert-text">
+    This is an warning message.
+  </div>
+</div>
+
+<p>
+  <button class="btn btn-success" onclick="launchModal('.demo-modal')">Launch Modal</button>
+</p>
 <p>
   example of how to move from page to page for prototype <br />
   <button class="btn btn-primary" onclick="loadPage('building')">click to go building page</button>
 </p>
+
+<form>
+  <div class="form-row">
+    <label>Test Label:</label>
+    <input type="text" />
+  </div>
+  <div class="form-row">
+    <label>Text Select Label:</label>
+    <select>
+      <option value="">--Choose One--</option>
+      <option value="hello">Hello</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label>Checkbox:</label>
+    <input type="checkbox" id="text-check-box" />
+    <label class="checkbox-label" for="text-check-box"></label>
+  </div>
+  <div class="form-row">
+    <label>Label for text area</label>
+    <textarea></textarea>
+  </div>
+</form>
+
+<div class="accordian-container collapsed">
+  <div class="accordian-header" onclick="toggleAccordian(this)">
+    <span class="fa fa-plus"></span>
+    This is the header.
+  </div>
+  <div class="accordian-body">
+    This is the body.
+  </div>
+</div>
+
+<div class="accordian-container collapsed">
+  <div class="accordian-header" onclick="toggleAccordian(this)">
+    This is the second accordian header.
+  </div>
+  <div class="accordian-body">
+    This is the second accordian body.
+  </div>
+</div>
+
+<div class="loading">
+</div>

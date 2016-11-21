@@ -1,5 +1,9 @@
 $primaryColor:#1e91cf;
 $secondaryColor:#15D870;
+$danger:#f61844;
+$warning:#ffe419;
+$success:#15d875;
+$mainFont:"Open Sans", arial, sans-serif;
 
 html, body {
   margin:0;
@@ -34,13 +38,12 @@ html, body {
     }
   }
 
-
 }
 #container{
   width:90%;
   height:calc(100% - 100px);
   position:fixed;
-  background-color:pink;
   color:#000;
-  margin:100px 0 0 10%;
+  margin:100px 0 20px 10%;
+  overflow-y:auto;
 }
