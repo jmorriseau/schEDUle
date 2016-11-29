@@ -25,8 +25,10 @@
     <div id="container" class="content-container">
 
     </div>
+
     <div class="modal-bg">
     </div>
+
     <div class="modal-container demo-modal">
       <div class="modal-header">
       </div>
@@ -34,6 +36,26 @@
       </div>
       <div class="modal-footer">
         <button class="pull-right" onclick="closeModal('.demo-modal')">Close</button>
+      </div>
+    </div>
+
+    <div class="modal-container schedule-modal">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <div class="alert-box info">
+          <div class="alert-icon">
+            <span class="fa fa-info-circle"></span>
+          </div>
+          <div class="alert-text">
+            Schedule Uploaded Successfully
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success pull-right" onclick="closeModal('.schedule-modal')">Schedule</button>
+        <button class="btn btn-default pull-right" onclick="closeModal('.schedule-modal')">Cancel</button>
       </div>
     </div>
 

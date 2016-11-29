@@ -1,11 +1,11 @@
-.classroom-container{
+.curriculum-container{
   position:relative;
   display:block;
   width:100%auto;
   height:100%
 }
 
-.classroom-selector {
+.curriculum-selector {
   width:250px;
   border-radius:5px;
   border:solid 1px #cccccc;
@@ -40,7 +40,7 @@
     font-size:16px;
   }
 
-  &.select-campus{
+  &.select-degree{
     right: calc(50% - (250px - 10%));
   }
 
@@ -48,11 +48,11 @@
     right:calc(100% - 250px);
     top:0;
 
-    &.select-building{
+    &.select-program{
       right:calc(100% - 510px);
     }
 
-    &.select-floor{
+    &.select-start{
       right:calc(100% - 770px);
     }
   }
@@ -62,7 +62,7 @@
   }
 }
 
-.result-classrooms{
+.result-curriculum{
   position:absolute;
   top:250px;
   right:-100%;
@@ -74,7 +74,7 @@
   }
 }
 
-.result-classrooms ul li{
+.result-curriculum ul li{
   width:100%;
   padding:15px 10px;
   box-sizing:border-box;

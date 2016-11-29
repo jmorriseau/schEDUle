@@ -2362,7 +2362,8 @@ html, body {
   position: fixed;
   color: #000;
   margin: 100px 0 20px 10%;
-  overflow-y: auto; }
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 #login-page {
   background-color: #eaeaea;
@@ -2593,7 +2594,7 @@ html, body {
     display: none; }
     .form-row input[type=checkbox]:checked ~ .checkbox-label {
       background-color: #1e91cf; }
-  .form-row input[type=text], .form-row input[type=password], .form-row input[type=email] {
+  .form-row input[type=text], .form-row input[type=password], .form-row input[type=email], .form-row input[type=number] {
     height: 28px;
     background-color: #fff;
     border: solid 1px #cccccc;
@@ -2623,7 +2624,8 @@ html, body {
   border: solid 1px #cccccc;
   font-size: 14px;
   text-transform: uppercase;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
   .btn.btn-success {
     background-color: #15d875;
     color: #fff;
@@ -2692,6 +2694,16 @@ div.loading {
   to {
     transform: rotate(360deg); } }
 
+.mock-link {
+  color: #1872a2;
+  font-size: inherit;
+  text-decoration: none;
+  cursor: pointer; }
+  .mock-link:hover {
+    text-decoration: underline; }
+  .mock-link:visited, .mock-link:link, .mock-link:active {
+    color: #1872a2; }
+
 .classroom-container {
   position: relative;
   display: block;
@@ -2739,3 +2751,96 @@ div.loading {
       right: calc(100% - 770px); }
   .classroom-selector.active {
     right: calc(50% - (250px - 10%)); }
+
+.result-classrooms {
+  position: absolute;
+  top: 250px;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+  width: 800px; }
+  .result-classrooms.active {
+    right: calc(50% - 400px); }
+
+.result-classrooms ul li {
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #cccccc;
+  display: block; }
+  .result-classrooms ul li:last-child {
+    border-bottom: none; }
+  .result-classrooms ul li:nth-child(even) {
+    background-color: #eaeaea; }
+
+.curriculum-container {
+  position: relative;
+  display: block;
+  width: 100%auto;
+  height: 100%; }
+
+.curriculum-selector {
+  width: 250px;
+  border-radius: 5px;
+  border: solid 1px #cccccc;
+  color: #666666;
+  position: absolute;
+  top: 250px;
+  right: -100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out; }
+  .curriculum-selector label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500; }
+  .curriculum-selector select {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 7px;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border-color: #000;
+    border-radius: 3px;
+    color: #000;
+    background-color: #fff;
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 16px; }
+  .curriculum-selector.select-degree {
+    right: calc(50% - (250px - 10%)); }
+  .curriculum-selector.completed {
+    right: calc(100% - 250px);
+    top: 0; }
+    .curriculum-selector.completed.select-program {
+      right: calc(100% - 510px); }
+    .curriculum-selector.completed.select-start {
+      right: calc(100% - 770px); }
+  .curriculum-selector.active {
+    right: calc(50% - (250px - 10%)); }
+
+.result-curriculum {
+  position: absolute;
+  top: 250px;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+  width: 800px; }
+  .result-curriculum.active {
+    right: calc(50% - 400px); }
+
+.result-curriculum ul li {
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #cccccc;
+  display: block; }
+  .result-curriculum ul li:last-child {
+    border-bottom: none; }
+  .result-curriculum ul li:nth-child(even) {
+    background-color: #eaeaea; }
+
+.schedule-continer {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 20px; }

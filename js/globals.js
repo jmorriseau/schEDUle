@@ -61,7 +61,7 @@ function toggleAccordian(elem){
   }
 }
 
-function updateClassroomSelect(current, next){
+function updateSlidingSelect(current, next){
   $(current).removeClass('active').addClass('completed');
   if(next !== undefined || next !== null){
     $(next).addClass('active');

@@ -1,5 +1,5 @@
 <div class="header">
-<h1>Current Campuses <span class="fa fa-plus pull-right" onclick="loadPage('add_edit_building')"></span></h1>
+<h1>Current Campuses <span class="fa fa-plus-square pull-right" onclick="loadPage('add_edit_building')"> Add Building</span></h1>
 </div>
 
 <div class="accordian-container collapsed">

@@ -189,7 +189,7 @@
     }
   }
 
-  input[type=text], input[type=password], input[type=email]{
+  input[type=text], input[type=password], input[type=email], input[type=number]{
     height:28px;
     background-color:#fff;
     border:solid 1px #cccccc;
@@ -224,6 +224,7 @@
   font-size:14px;
   text-transform: uppercase;
   border-radius:3px;
+  cursor:pointer;
 
   &.btn-success{
     background-color:$success;
@@ -312,5 +313,19 @@ div.loading {
   to{
     transform: rotate(360deg);
   }
+}
 
+.mock-link{
+  color:darken($primaryColor,10%);
+  font-size:inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover{
+    text-decoration: underline;
+  }
+
+  &:visited, &:link, &:active{
+    color:darken($primaryColor,10%);
+  }
 }
