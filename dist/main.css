@@ -2332,38 +2332,75 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: #000; }
+  font-family: "Open Sans", arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
 
 #header {
-  position: fixed;
+  display: block;
   height: 100px;
   width: 100%;
-  background-color: #1e91cf; }
+  background-color: #22305d;
+  position: fixed;
+  z-index: 9999999; }
+
+#header-image {
+  background-image: url("../images/redesign-logo2.png");
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 300px; }
+
+.content-wrapper {
+  display: table;
+  width: 100%;
+  height: calc(100% - 100px);
+  position: relative;
+  font-size: 0;
+  padding-top: 100px; }
+  .content-wrapper.full-height {
+    height: 100%; }
 
 #side-bar {
-  position: fixed;
-  width: 10%;
-  margin-top: 100px;
-  height: calc(100% - 100px);
-  background-color: #1e91cf;
-  color: #fff; }
+  display: table-cell;
+  width: 15%;
+  height: 100%;
+  background-color: #22305d;
+  color: #fff;
+  font-size: 12px;
+  box-sizing: border-box;
+  position: fixed; }
   #side-bar ul {
-    padding: 0; }
+    padding: 0;
+    margin: 1px 0 0 0; }
     #side-bar ul li {
       list-style-type: none;
-      background-color: #1e91cf; }
+      background-color: #22305d;
+      height: 50px;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #fff;
+      margin-top: -1px;
+      font-size: 16px; }
+      #side-bar ul li.active {
+        background-color: #e69b00; }
+      #side-bar ul li span {
+        padding: 15px 10px 2px 15px; }
       #side-bar ul li:hover {
-        background-color: #6abde9; }
+        background-color: #ffc54d;
+        cursor: pointer; }
 
 #container {
-  width: 90%;
-  height: calc(100% - 100px);
-  position: fixed;
+  width: 85%;
+  height: 100%;
   color: #000;
-  margin: 100px 0 20px 10%;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: table-cell;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+span {
+  font: "Open Sans", arial, sans-serif; }
 
 #login-page {
   background-color: #eaeaea;
@@ -2429,7 +2466,7 @@ html, body {
     margin-top: 25px; }
   #login-container .btn-login {
     padding: 10px 35px;
-    background-color: #1e91cf;
+    background-color: #22305d;
     color: #fff;
     border-radius: 5px;
     border: solid 1px #0A5B87;
@@ -2492,9 +2529,9 @@ html, body {
     background-color: #ffe419; }
 
 .info {
-  border-color: #1e91cf; }
+  border-color: #22305d; }
   .info .alert-icon, .info .alert-box .alert-text, .alert-box .info .alert-text {
-    background-color: #1e91cf; }
+    background-color: #22305d; }
 
 .modal-bg {
   width: 100%;
@@ -2509,7 +2546,7 @@ html, body {
 .modal-container {
   width: 600px;
   height: 500px;
-  border: solid 1px #1e91cf;
+  border: solid 1px #22305d;
   border-radius: 5px;
   overflow: hidden;
   z-index: 8000;
@@ -2533,7 +2570,7 @@ html, body {
     width: 100%;
     height: 35px;
     line-height: 35px;
-    background-color: #15D870;
+    background-color: #e69b00;
     color: #fff;
     padding: 0 10px;
     box-sizing: border-box; }
@@ -2593,7 +2630,7 @@ html, body {
   .form-row input[type=checkbox] {
     display: none; }
     .form-row input[type=checkbox]:checked ~ .checkbox-label {
-      background-color: #1e91cf; }
+      background-color: #22305d; }
   .form-row input[type=text], .form-row input[type=password], .form-row input[type=email], .form-row input[type=number] {
     height: 28px;
     background-color: #fff;
@@ -2641,7 +2678,7 @@ html, body {
   display: block;
   border-radius: 5px;
   box-sizing: border-box;
-  border: solid 1px #1e91cf;
+  border: solid 1px #22305d;
   margin-bottom: 15px; }
   .accordian-container .accordian-header {
     width: 100%;
@@ -2651,7 +2688,7 @@ html, body {
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #1e91cf;
+    background-color: #22305d;
     font-size: 16px;
     color: #fff; }
     .accordian-container .accordian-header span.fa {
@@ -2666,11 +2703,11 @@ html, body {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px; }
   .accordian-container.expanded {
-    border-color: #15D870; }
+    border-color: #e69b00; }
     .accordian-container.expanded .accordian-header {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      background-color: #15D870; }
+      background-color: #e69b00; }
 
 .content-container {
   padding: 0 15px;
@@ -2682,7 +2719,7 @@ div.loading {
   height: 50px;
   border-radius: 50px;
   border: solid 1px #cccccc;
-  border-top-color: #1e91cf;
+  border-top-color: #22305d;
   animation-name: spin;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -2695,14 +2732,14 @@ div.loading {
     transform: rotate(360deg); } }
 
 .mock-link {
-  color: #1872a2;
+  color: #141d38;
   font-size: inherit;
   text-decoration: none;
   cursor: pointer; }
   .mock-link:hover {
     text-decoration: underline; }
   .mock-link:visited, .mock-link:link, .mock-link:active {
-    color: #1872a2; }
+    color: #141d38; }
 
 .classroom-container {
   position: relative;
@@ -2840,7 +2877,49 @@ div.loading {
   .result-curriculum ul li:nth-child(even) {
     background-color: #eaeaea; }
 
+div.alpha-search {
+  color: blue;
+  text-align: center; }
+
+.result-faculty ul li {
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #cccccc;
+  display: block; }
+  .result-faculty ul li:last-child {
+    border-bottom: none; }
+  .result-faculty ul li:nth-child(even) {
+    background-color: #eaeaea; }
+
+.result-myschedule ul li {
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #cccccc;
+  display: block; }
+  .result-myschedule ul li:last-child {
+    border-bottom: none; }
+  .result-myschedule ul li:nth-child(even) {
+    background-color: #eaeaea; }
+
 .schedule-continer {
   border: 1px solid #cccccc;
   border-radius: 5px;
   padding: 20px; }
+
+.campus-container {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  font-size: 0; }
+  .campus-container > section {
+    display: inline-block;
+    min-height: 400px;
+    width: 33.3333333%;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; }
+    .campus-container > section:hover {
+      background-color: #efefef;
+      box-shadow: 1px 1px 10px #cccccc;
+      transition: all 0.3s ease-in-out; }

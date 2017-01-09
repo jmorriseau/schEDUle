@@ -1,5 +1,5 @@
-$primaryColor:#1e91cf;
-$secondaryColor:#15D870;
+$primaryColor:#22305d;
+$secondaryColor:#e69b00;
 $danger:#f61844;
 $warning:#ffe419;
 $success:#15d875;
@@ -9,42 +9,89 @@ html, body {
   margin:0;
   padding:0;
   font-size:16px;
-  font-family:'Open Sans', sans-serif;
-  color:#000;
+  font-family:$mainFont;
+  width:100%;
+  height:100vh;
+  position:relative;
 }
 #header {
-  position:fixed;
+  display: block;
   height:100px;
   width:100%;
   background-color:$primaryColor;
+  position: fixed;
+  z-index:9999999;
+
+}
+#header-image{
+  background-image:url("../images/redesign-logo2.png");
+  background-repeat: no-repeat;
+  height:80px;
+  width:300px;
+}
+
+
+.content-wrapper{
+  display:table;
+  width:100%;
+  height:calc(100% - 100px);
+  position:relative;
+  font-size:0;
+  padding-top:100px;
+
+  &.full-height {
+    height: 100%;
+  }
 }
 #side-bar{
-  position:fixed;
-  width:10%;
-  margin-top:100px;
-  height:calc(100% - 100px);
+  display:table-cell;
+  width:15%;
+  height:100%;
   background-color:$primaryColor;
   color:#fff;
+  font-size:12px;
+  box-sizing: border-box;
+  position:fixed;
 
   ul {
     padding:0;
+    margin: 1px 0 0 0;
 
     li {
       list-style-type:none;
       background-color:$primaryColor;
+      height:50px;
+      border-bottom: 1px solid #fff;
+      border-top:1px solid #fff;
+      margin-top:-1px;
+      font-size:16px;
+
+      &.active {
+        background-color: $secondaryColor;
+      }
+
+      span{
+        padding:15px 10px 2px 15px;
+      }
+
       &:hover{
-        background-color:lighten($primaryColor,20%);
+        background-color:lighten($secondaryColor,20%);
+        cursor: pointer;
       }
     }
   }
 
 }
 #container{
-  width:90%;
-  height:calc(100% - 100px);
-  position:fixed;
+  width:85%;
+  height:100%;
   color:#000;
-  margin:100px 0 20px 10%;
   overflow-y:auto;
   overflow-x: hidden;
+  display:table-cell;
+  font-size:16px;
+  box-sizing:border-box;
+}
+span {
+  font: $mainFont;
 }

@@ -1,4 +1,4 @@
-Ths is the home page.
+This is the home page.
 <!--
 Notes for Saturday:
 Build the pages out
@@ -15,6 +15,8 @@ from Sunday:
 increase height of modal header
 
  -->
+
+
 <div class="alert-box info">
   <div class="alert-icon">
     <span class="fa fa-info-circle"></span>

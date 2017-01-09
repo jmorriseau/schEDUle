@@ -1,0 +1,20 @@
+.campus-container {
+  display:block;
+  width:100%;
+  min-height:400px;
+  font-size:0;
+
+  >section{
+    display:inline-block;
+    min-height: 400px;
+    width:33.3333333%;
+    font-size:16px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background-color:#efefef;
+      box-shadow: 1px 1px 10px #cccccc;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

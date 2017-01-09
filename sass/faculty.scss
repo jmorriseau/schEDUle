@@ -1,0 +1,19 @@
+div.alpha-search{
+  color:blue;
+  text-align:center;
+}
+.result-faculty ul li{
+  width:100%;
+  padding:15px 10px;
+  box-sizing:border-box;
+  border-bottom:solid 1px #cccccc;
+  display:block;
+
+  &:last-child{
+    border-bottom:none;
+  }
+
+  &:nth-child(even){
+    background-color:#eaeaea;
+  }
+}

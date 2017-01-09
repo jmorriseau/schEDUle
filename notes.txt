@@ -1,0 +1,11 @@
+make ajax call to pull in test.json
+result of call it now equal to a variable called "campuses"
+
+campuses.push({}) brackets indicate the object your pushing in
+
+Example
+
+var newCampus = {
+  building: "New Building",
+  address: "This address"
+}

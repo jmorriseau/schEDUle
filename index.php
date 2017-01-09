@@ -6,25 +6,39 @@
     <link rel="stylesheet" href="dist/main.css" type="text/css" />
   </head>
   <body onload="loadPage('login')">
+
+
     <div id="header">
-      header stuff here
-    </div>
-    <div id="side-bar">
-      <ul>
-        <li onclick="loadPage('home')">Home</li>
-        <li onclick="loadPage('building')">Building</li>
-        <li onclick="loadPage('classroom')">Classroom</li>
-        <li onclick="loadPage('course')">Course</li>
-        <li onclick="loadPage('curriculum')">Curriculum</li>
-        <li onclick="loadPage('faculty')">Faculty</li>
-        <li onclick="loadPage('schedule-wizard')">Schedule Wizard</li>
-        <li onclick="loadPage('login')">Log In</li>
-      </ul>
-    </div>
-
-    <div id="container" class="content-container">
+      <div id="header-image">
+      </div>
 
     </div>
+
+    <div class="content-wrapper">
+      <div id="side-bar">
+        <ul>
+          <li onclick="loadPage('home')" class="nav-home"><span class="fa fa-home"></span>Home</li>
+          <li onclick="loadPage('building')" class="nav-building"><span class="fa fa-building-o"></span>Building</li>
+          <li onclick="loadPage('classroom')" class="nav-classroom"><span class="fa fa-desktop"></span>Classroom</li>
+          <li onclick="loadPage('course')" class="nav-course"><span class="fa fa-book"></span>Course</li>
+          <li onclick="loadPage('curriculum')" class="nav-curriculum"><span class="fa fa-map-signs"></span>Curriculum</li>
+          <li onclick="loadPage('faculty')" class="nav-faculty"><span class="fa fa-id-badge"></span>Faculty</li>
+          <li onclick="loadPage('schedule-wizard')" class="nav-schedule-wizard"><span class="fa fa-magic"></span>Schedule Wizard</li>
+          <li onclick="loadPage('myschedule')" class="nav-myschedule"><span class="fa fa-user-circle-o"></span>My Schedule</li>
+          <li onclick="loadPage('login')">Log In</li>
+        </ul>
+      </div>
+
+      <div id="container" class="content-container">
+
+      </div>
+
+    </div>
+
+
+
+
+
 
     <div class="modal-bg">
     </div>
