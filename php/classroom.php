@@ -11,7 +11,10 @@
   </div>
 </div>
 
-<h1>Current Classrooms</h1>
+<div class="header">
+  <h1>Current Classrooms</h1>
+</div>
+<hr />
 
 <div class="classroom-container content-container">
 

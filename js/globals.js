@@ -49,12 +49,6 @@ function closeModal(section){
 }
 
 function toggleAccordian(elem){
-  // if($(elem).parent().hasClass("expanded")){
-  //   $(elem).parent().removeClass("expanded").addClass("collapsed");
-  // }
-  // else {
-  //   $(elem).parent().removeClass("collapsed").addClass("expanded");
-  // }
   $(elem).next(".accordian-body").slideToggle();
   $(elem).parent().toggleClass("expanded");
   if($(elem).parent().hasClass('expanded')){
