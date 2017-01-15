@@ -1,8 +1,13 @@
 <div class="header">
   <h1>Current Curriculum
-    <span class="fa fa-plus-square pull-right" onclick="loadPage('add_curriculum')"> Add Curriculum</span>
+    <button class="btn btn-success pull-right" onclick="loadPage('add_curriculum')">
+      <span class="fa fa-plus-circle"></span>
+      Add Curriculum
+    </button>
+    <!--<span class="fa fa-plus-square pull-right" onclick="loadPage('add_curriculum')"> Add Curriculum</span>-->
 </h1>
 </div>
+<hr/>
 
 <div class="curriculum-container content-container">
 

@@ -1,6 +1,7 @@
 <h1>Add/Edit Classroom</h1>
-
+<hr/>
 <form>
+<div class="form-container edit-classroom-container">
   <div class="form-row">
     <label>Building Name:</label>
     <select>
@@ -50,4 +51,5 @@
     <button class="btn btn-default" onclick="loadPage('classroom')">Cancel</button>
     <button class="btn btn-success" onclick="loadPage('classroom')">Save</button>
   </div>
+</div>
 </form>

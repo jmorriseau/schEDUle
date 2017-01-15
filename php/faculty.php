@@ -1,5 +1,5 @@
 <h1>Faculty</h1>
-
+<hr/>
 <div class="alpha-search">
   A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z &nbsp;&nbsp;&nbsp;
   <span class="fa fa-search"></span>

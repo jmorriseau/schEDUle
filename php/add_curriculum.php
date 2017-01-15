@@ -1,5 +1,5 @@
 <h1>Add Curriculum</h1>
-
+<hr/>
 <form>
   <div class="form-row">
     <label>Curriculum Name:</label>

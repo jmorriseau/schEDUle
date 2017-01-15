@@ -1,5 +1,6 @@
 <h1>Add/Edit Course</h1>
-
+<hr/>
+<div class="form-container edit-classroom-container">
 <form>
   <div class="form-row">
     <label>Course Name:</label>
@@ -48,4 +49,5 @@
     <button class="btn btn-default" onclick="loadPage('course')">Cancel</button>
     <button class="btn btn-success" onclick="loadPage('course')">Save</button>
   </div>
+</div>
 </form>
