@@ -1,10 +1,5 @@
 <div class="header">
-<h1>Current Campuses
-  <button class="btn btn-success pull-right" onclick="loadPage('add_edit_building')">
-    <span class="fa fa-plus-circle"></span>
-    Add building
-  </button>
-</h1>
+<h1>Current Campuses</h1>
 </div>
 <hr />
 
@@ -68,33 +63,44 @@
     for(var i = 0; i < campuses.length; i++){
 
       if(campuses[i].campusName == "Access Road"){
-        access += '<div>';
 
          for(var x = 0; x < campuses[i].buildings.length; x++){
+           access += "<div class='buildings-row'>";
            access += campuses[i].buildings[x].name;
-           access += '<br />';
+           access += "<button class='btn btn-success pull-right' onclick='loadPage(\"add_edit_building\")'>";
+           access += '<span class="fa fa-plus-circle"></span>';
+           access += 'Add building';
+           access += '</button>';
+           access += '</div>';
          }
 
-         access += '</div>';
       }
       else if(campuses[i].campusName == "East Greenwich"){
-        eastGreen += '<div>';
 
          for(var x = 0; x < campuses[i].buildings.length; x++){
+           eastGreen += "<div class='buildings-row'>";
            eastGreen += campuses[i].buildings[x].name;
-           eastGreen += '<br />';
+           eastGreen += "<button class='btn btn-success pull-right' onclick='loadPage(\"add_edit_building\")'>";
+           eastGreen += '<span class="fa fa-plus-circle"></span>';
+           eastGreen += 'Add building';
+           eastGreen += '</button>';
+           eastGreen += '</div>';
          }
-         eastGreen += '</div>';
+
       }
       else if(campuses[i].campusName == "Post Road"){
-        postRd += '<div>';
 
          for(var x = 0; x < campuses[i].buildings.length; x++){
+           postRd += "<div class='buildings-row'>";
            postRd += campuses[i].buildings[x].name;
-           postRd += '<br />';
+           postRd += "<button class='btn btn-success pull-right' onclick='loadPage(\"add_edit_building\")'>";
+           postRd += '<span class="fa fa-plus-circle"></span>';
+           postRd += 'Add building';
+           postRd += '</button>';
+           postRd += '</div>';
          }
-         postRd += '</div>';
       }
+
     }
 
     // for(var i = 0; i < campuses.length; i++) {

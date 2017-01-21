@@ -16,11 +16,15 @@
     position:relative;
 
     .campus-buildings{
-
       width:0%;
       float:left;
       opacity: 0;
       visibility: hidden;
+
+      .buildings-row{
+        width:90%;
+        height:60px;
+      }
     }
 
     .campus-info-container{

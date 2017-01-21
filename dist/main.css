@@ -2972,6 +2972,9 @@ div.alpha-search {
       float: left;
       opacity: 0;
       visibility: hidden; }
+      .campus-container > section .campus-buildings .buildings-row {
+        width: 90%;
+        height: 60px; }
     .campus-container > section .campus-info-container {
       width: 100%;
       float: left; }
