@@ -5,7 +5,7 @@
   <span class="fa fa-search"></span>
 
 </div>
-
+<hr/>
 <div class="result-faculty">
 
   <ul>
