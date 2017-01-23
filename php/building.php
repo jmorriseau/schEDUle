@@ -8,48 +8,45 @@
     <span class="close-edit fa fa-times" onClick="closeEdit()"></span>
     <div class="campus-info-container">
       <div class="campus-image access-road"></div>
-      <div class="campus-address text-center">
+      <div class="campus-address">
           <div class="campus-card-header">Access Road Campus</div>
           100 Access Road<br />
           Warwick, RI 02886
       </div>
     </div>
-    <div id="access-buildings" class="campus-buildings">
-      <p>Scarlet is noisey.</p>
-    </div>
     <button class="btn btn-success edit-campus-btn" onclick="editCampus(this)">Edit</button>
+    <div id="access-buildings" class="campus-buildings">
+    </div>
   </section>
 
   <section>
     <span class="close-edit fa fa-times" onClick="closeEdit()"></span>
     <div class="campus-info-container">
       <div class="campus-image east-green"></div>
-      <div class="campus-address text-center">
+      <div class="campus-address">
           <div class="campus-card-header">East Greenwich Campus</div>
           One New England Tech Blvd<br />
           East Greenwich, RI 02818-1205
       </div>
     </div>
-    <div id="eg-buildings" class="campus-buildings">
-      <p>Scarlet is noisey.</p>
-    </div>
     <button class="btn btn-success edit-campus-btn" onclick="editCampus(this)">Edit</button>
+    <div id="eg-buildings" class="campus-buildings">
+    </div>
   </section>
 
   <section>
     <span class="close-edit fa fa-times" onClick="closeEdit()"></span>
     <div class="campus-info-container">
       <div class="campus-image post-road"></div>
-      <div class="campus-address text-center">
+      <div class="campus-address">
           <div class="campus-card-header">Post Road Campus</div>
           2480 Post Road<br />
           Warwick, RI 02886
       </div>
     </div>
-    <div id="post-rd-buildings" class="campus-buildings">
-      <p>Scarlet is noisey.</p>
-    </div>
     <button class="btn btn-success edit-campus-btn" onclick="editCampus(this)">Edit</button>
+    <div id="post-rd-buildings" class="campus-buildings">
+    </div>
   </section>
 </div>
 
@@ -67,7 +64,7 @@
          for(var x = 0; x < campuses[i].buildings.length; x++){
            access += "<div class='buildings-row'>";
            access += campuses[i].buildings[x].name;
-           access += "<button class='btn btn-success pull-right' onclick='loadPage(\"add_edit_building\")'>";
+           access += "<button class='btn btn-success pull-right' onclick='loadSubPage(\"add_edit_building\")'>";
            access += '<span class="fa fa-plus-circle"></span>';
            access += 'Add building';
            access += '</button>';

@@ -2603,6 +2603,10 @@ span {
   width: 100%;
   padding: 10px 0;
   position: relative; }
+  .form-row.error input[type=text], .form-row.error input[type=password], .form-row.error select, .form-row.error textarea {
+    border-color: red; }
+  .form-row.error label {
+    color: red; }
   .form-row textarea {
     height: 100px;
     background-color: #fff;
@@ -2953,67 +2957,85 @@ div.alpha-search {
   padding: 20px; }
 
 .campus-container {
-  display: block;
   width: 100%;
-  min-height: 400px;
-  font-size: 0;
+  height: 400px;
   position: relative;
-  z-index: 0; }
-  .campus-container > section {
-    display: inline-block;
-    min-height: 400px;
+  overflow: hidden; }
+  .campus-container section {
     width: 33.3333333%;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
+    height: 400px;
+    display: inline-block;
     float: left;
+    background-color: #fff;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease 0.5s, background-color 0.3s ease;
     position: relative; }
-    .campus-container > section .campus-buildings {
-      width: 0%;
-      float: left;
-      opacity: 0;
-      visibility: hidden; }
-      .campus-container > section .campus-buildings .buildings-row {
-        width: 90%;
-        height: 60px; }
-    .campus-container > section .campus-info-container {
+    .campus-container section .campus-info-container {
       width: 100%;
-      float: left; }
-    .campus-container > section .close-edit {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: block;
+      transition: width 0.3s ease;
+      float: left;
+      padding: 15px;
+      box-sizing: border-box; }
+      .campus-container section .campus-info-container .campus-image {
+        margin-left: calc(50% - 75px);
+        transition: all 0.3s ease 0.5s; }
+    .campus-container section .edit-campus-btn {
+      margin: 10px auto;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+      display: block; }
+    .campus-container section .campus-buildings {
       opacity: 0;
       visibility: hidden;
-      color: red; }
-    .campus-container > section.edit-campus {
+      width: 0;
+      float: left; }
+      .campus-container section .campus-buildings .buildings-row {
+        height: 50px; }
+    .campus-container section .close-edit {
+      opacity: 0;
+      visibility: hidden;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10px;
+      right: 10px; }
+    .campus-container section.active {
       width: 100%;
-      background-color: #f2f2f2;
-      transition: all 0.25s ease-in-out;
-      z-index: 9999999; }
-      .campus-container > section.edit-campus .campus-info-container {
+      z-index: 1000;
+      background-color: #e2e2e2;
+      transition: all 0.5s ease; }
+      .campus-container section.active .edit-campus-btn {
+        opacity: 0;
+        visibility: hidden;
+        animation: all 0.5s ease 0.5s; }
+      .campus-container section.active .close-edit {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease-in 0.5s; }
+      .campus-container section.active .campus-info-container {
         width: 25%;
-        margin: 0;
-        transition: all 0.25s ease-in 0.4s; }
-      .campus-container > section.edit-campus .campus-buildings {
+        overflow-x: visible;
+        transition: width 0.3s ease 0.5s;
+        float: left;
+        margin-left: 0;
+        text-align: left; }
+      .campus-container section.active .campus-buildings {
         width: 75%;
-        visibility: visible;
-        opacity: 1;
-        transition: opacity 0.25s ease-in 1s; }
-      .campus-container > section.edit-campus .close-edit {
+        float: left;
+        overflow: hidden;
         opacity: 1;
         visibility: visible;
-        transition: all 0.25s ease-in 0.25s; }
-    .campus-container > section:hover {
+        transition: all 0.3s ease 1s; }
+    .campus-container section.inactive {
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1000;
+      transition: all 0.5s ease; }
+    .campus-container section:hover {
       background-color: #efefef;
       box-shadow: 1px 1px 10px #cccccc;
-      transition: all 0.3s ease-in-out; }
-    .campus-container > section button {
-      margin: 10px auto;
-      display: block; }
+      transition: all 0.5s ease-in-out; }
 
 .building-container {
   width: 500px;
@@ -3025,8 +3047,7 @@ div.alpha-search {
   border: 1px solid #000;
   border-radius: 100%;
   height: 150px;
-  width: 150px;
-  margin: 30px auto; }
+  width: 150px; }
   .campus-image.access-road {
     background-image: url(../images/access_campus.jpg); }
   .campus-image.east-green {
@@ -3035,7 +3056,8 @@ div.alpha-search {
     background-image: url(../images/post_campus.jpg); }
 
 .campus-address {
-  margin-top: 30px; }
+  margin: 30px 0 10px 0;
+  text-align: center; }
   .campus-address .campus-card-header {
     font-weight: 600;
     font-size: 16px; }

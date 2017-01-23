@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css" type="text/css" />
   </head>
-  <body onload="loadPage('login')">
+  <body onload="loadPage('add_edit_building')">
 
 
     <div id="header">
